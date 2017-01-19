@@ -16,6 +16,26 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FF3F51B4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="PDAM Tirta Aneuk Laot Kota Sabang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView6"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:id="@+id/relativeLayout"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
