@@ -25,4 +25,5 @@ public class pelanggan extends Activity {
         Intent hasilIntent = new Intent(pelanggan.this, MainActivity.class);
         startActivity(hasilIntent);
     }
+    //TEST
 }
