@@ -30,7 +30,8 @@
             android:id="@+id/textView6"
             android:textStyle="normal|bold"
             android:textSize="18sp"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
     </RelativeLayout>
 
     <RelativeLayout

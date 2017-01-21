@@ -38,6 +38,9 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         Intent hasilIntent = new Intent(MainActivity.this, tentang.class);
         startActivity(hasilIntent);
     }
+    public void segarkan(View v){
+       getJSON();
+    }
 
     private void getJSON(){
         class GetJSON extends AsyncTask<Void,Void,String> {
