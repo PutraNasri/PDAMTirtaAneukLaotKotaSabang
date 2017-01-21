@@ -21,4 +21,8 @@ public class tentang extends Activity {
         Intent hasilIntent = new Intent(tentang.this, MainActivity.class);
         startActivity(hasilIntent);
     }
+    public void pelanggan(View v){
+        Intent hasilIntent = new Intent(tentang.this, pelanggan.class);
+        startActivity(hasilIntent);
+    }
 }

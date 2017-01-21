@@ -86,7 +86,8 @@
                     android:layout_marginRight="40dp"
                     android:background="@drawable/iconabout"
                     android:layout_width="50dp"
-                    android:layout_height="50dp" />
+                    android:layout_height="50dp"
+                    android:onClick="pelanggan" />
 
                 <ImageView
                     android:id="@+id/imageView"

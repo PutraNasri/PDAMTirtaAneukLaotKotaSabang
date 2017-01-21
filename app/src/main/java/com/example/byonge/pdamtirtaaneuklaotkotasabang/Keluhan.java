@@ -39,6 +39,10 @@ public class Keluhan extends Activity {
         Intent hasilIntent = new Intent(Keluhan.this, tentang.class);
         startActivity(hasilIntent);
     }
+    public void pelanggan(View v){
+        Intent hasilIntent = new Intent(Keluhan.this, pelanggan.class);
+        startActivity(hasilIntent);
+    }
     public void send(View v){
         addEmployee();
     }
