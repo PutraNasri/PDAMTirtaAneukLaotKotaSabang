@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".Keluhan" />
         <activity android:name=".tentang" />
-        <activity android:name=".isi_berita"></activity>
+        <activity android:name=".isi_berita" />
+        <activity android:name=".pelanggan"></activity>
     </application>
 
 </manifest>
