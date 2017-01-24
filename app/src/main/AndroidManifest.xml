@@ -21,7 +21,8 @@
         <activity android:name=".Keluhan" />
         <activity android:name=".tentang" />
         <activity android:name=".isi_berita" />
-        <activity android:name=".pelanggan"></activity>
+        <activity android:name=".pelanggan" />
+        <activity android:name=".pasang_baru"></activity>
     </application>
 
 </manifest>
