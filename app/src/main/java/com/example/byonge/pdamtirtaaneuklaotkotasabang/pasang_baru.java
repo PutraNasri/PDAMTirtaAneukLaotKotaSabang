@@ -12,3 +12,4 @@ public class pasang_baru extends Activity {
         setContentView(R.layout.activity_pasang_baru);
     }
 }
+//assasa
