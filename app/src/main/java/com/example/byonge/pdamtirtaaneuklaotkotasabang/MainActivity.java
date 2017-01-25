@@ -5,8 +5,10 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Vibrator;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
@@ -21,6 +23,7 @@ import java.util.HashMap;
 public class MainActivity extends Activity implements ListView.OnItemClickListener {
     private ListView listView;
     private String JSON_STRING;
+    private  SwipeRefreshLayout mySwipeRefreshLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +31,22 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         listView = (ListView) findViewById(R.id.listView);
         listView.setOnItemClickListener(this);
 
+
         getJSON();
+/*
+        mySwipeRefreshLayout.setOnRefreshListener(
+                new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+
+
+                        // This method performs the actual data-refresh operation.
+                        // The method calls setRefreshing(false) when it's finished.
+                        getJSON();
+                    }
+                }
+        );
+  */
     }
     public void keluhan(View v){
         Intent hasilIntent = new Intent(MainActivity.this, Keluhan.class);
@@ -114,4 +132,6 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         intent.putExtra(config.EMP_ID,empId);
         startActivity(intent);
     }
+
+
 }
