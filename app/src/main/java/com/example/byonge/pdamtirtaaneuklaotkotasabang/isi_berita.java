@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 import static android.R.attr.name;
 
-public class isi_berita extends AppCompatActivity {
+public class isi_berita extends Activity {
     private TextView editTextid;
     private TextView editTextjudul;
     private TextView editTextisi;

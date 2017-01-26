@@ -86,6 +86,101 @@
             android:layout_marginBottom="50dp"
             android:layout_below="@+id/relativeLayout">
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText7"
+                        android:hint="NAMA" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText6"
+                        android:layout_marginTop="5dp"
+                        android:hint="NO IDENTITAS (KTP/SIM/PASPOR)" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText5"
+                        android:layout_marginTop="5dp"
+                        android:hint="PEKERJAAN" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText4"
+                        android:layout_marginTop="5dp"
+                        android:hint="JENIS BANGUNAN" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText3"
+                        android:layout_marginTop="5dp"
+                        android:hint="ALAMAT TEMPAT TINGGAL" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText2"
+                        android:layout_marginTop="5dp"
+                        android:hint="HP / TELP" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editText"
+                        android:layout_marginTop="5dp"
+                        android:hint="ALAMAT YANG AKAN DIPASANG" />
+
+                    <Button
+                        android:text="KIRIM PENGAJUAN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button3"
+                        android:layout_marginTop="5dp"
+                        android:onClick="send" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:text="Silahkan isi Form Pengajuan Pasang Baru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_marginTop="21dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
 
     </RelativeLayout>
