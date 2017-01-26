@@ -14,11 +14,15 @@ import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
 
 public class MainActivity extends Activity implements ListView.OnItemClickListener {
     private ListView listView;
@@ -51,14 +55,17 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     public void keluhan(View v){
         Intent hasilIntent = new Intent(MainActivity.this, Keluhan.class);
         startActivity(hasilIntent);
+        finish();
     }
     public void tentang(View v){
         Intent hasilIntent = new Intent(MainActivity.this, tentang.class);
         startActivity(hasilIntent);
+        finish();
     }
     public void pelanggan(View v){
         Intent hasilIntent = new Intent(MainActivity.this, pelanggan.class);
         startActivity(hasilIntent);
+        finish();
     }
     public void segarkan(View v){
        getJSON();
@@ -133,5 +140,43 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         startActivity(intent);
     }
 
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler() {
+            public void postDelayed(Runnable runnable, int i) {
+            }
+
+            @Override
+            public void publish(LogRecord record) {
+
+            }
+
+            @Override
+            public void flush() {
+
+            }
+
+            @Override
+            public void close() throws SecurityException {
+
+            }
+        }.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
 
 }

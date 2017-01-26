@@ -8,11 +8,14 @@ import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.HashMap;
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
 
 public class Keluhan extends Activity {
     private EditText editTextrekening;
@@ -34,18 +37,23 @@ public class Keluhan extends Activity {
     public void berita(View v){
         Intent hasilIntent = new Intent(Keluhan.this, MainActivity.class);
         startActivity(hasilIntent);
+        finish();
     }
     public void tentang(View v){
         Intent hasilIntent = new Intent(Keluhan.this, tentang.class);
         startActivity(hasilIntent);
+        finish();
     }
     public void pelanggan(View v){
         Intent hasilIntent = new Intent(Keluhan.this, pelanggan.class);
         startActivity(hasilIntent);
+        finish();
     }
     public void send(View v){
         addEmployee();
     }
+
+
 
     private void addEmployee() {
         //proses pengambilan string dari variabel
@@ -103,7 +111,45 @@ public class Keluhan extends Activity {
 
 
     }
+    boolean doubleBackToExitPressedOnce = false;
 
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler() {
+            public void postDelayed(Runnable runnable, int i) {
+            }
+
+            @Override
+            public void publish(LogRecord record) {
+
+            }
+
+            @Override
+            public void flush() {
+
+            }
+
+            @Override
+            public void close() throws SecurityException {
+                finish();
+                System.exit(0);
+            }
+        }.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
+    }
 
 
 
