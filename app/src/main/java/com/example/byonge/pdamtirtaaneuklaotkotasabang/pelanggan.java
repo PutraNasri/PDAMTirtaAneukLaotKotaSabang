@@ -25,5 +25,9 @@ public class pelanggan extends Activity {
         Intent hasilIntent = new Intent(pelanggan.this, MainActivity.class);
         startActivity(hasilIntent);
     }
+    public void pasang_baru(View v){
+        Intent hasilIntent = new Intent(pelanggan.this, pasang_baru.class);
+        startActivity(hasilIntent);
+    }
     //TEST
 }
