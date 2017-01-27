@@ -50,10 +50,79 @@ public class Keluhan extends Activity {
         finish();
     }
     public void send(View v){
-        addEmployee();
+
+        if (editTextrekening.getText().toString().equals("")) {
+            AlertDialog.Builder a_builder = new AlertDialog.Builder(Keluhan.this);
+            a_builder.setMessage("Rekening tidak boleh kosong")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = a_builder.create();
+            alert.setTitle("Info");
+            alert.show();
+        }
+        if (editTextalamat.getText().toString().equals("")) {
+            AlertDialog.Builder a_builder = new AlertDialog.Builder(Keluhan.this);
+            a_builder.setMessage("Alamat tidak boleh kosong")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = a_builder.create();
+            alert.setTitle("Info");
+            alert.show();
+        }
+        if (editTextnama.getText().toString().equals("")) {
+            AlertDialog.Builder a_builder = new AlertDialog.Builder(Keluhan.this);
+            a_builder.setMessage("Nama tidak boleh kosong")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = a_builder.create();
+            alert.setTitle("Info");
+            alert.show();
+        }
+        if (editTextkontak.getText().toString().equals("")) {
+            AlertDialog.Builder a_builder = new AlertDialog.Builder(Keluhan.this);
+            a_builder.setMessage("Kontak tidak boleh kosong")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = a_builder.create();
+            alert.setTitle("Info");
+            alert.show();
+        }
+        if (editTextisi.getText().toString().equals("")) {
+            AlertDialog.Builder a_builder = new AlertDialog.Builder(Keluhan.this);
+            a_builder.setMessage("kolom keluhan tidak boleh kosong")
+                    .setCancelable(false)
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = a_builder.create();
+            alert.setTitle("Info");
+            alert.show();
+        }
+        else {addEmployee();}
     }
-
-
 
     private void addEmployee() {
         //proses pengambilan string dari variabel

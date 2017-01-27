@@ -177,7 +177,6 @@
                         <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:inputType="textPersonName"
                             android:ems="10"
                             android:id="@+id/textkontak"
                             android:layout_below="@+id/textnama"
@@ -185,7 +184,8 @@
                             android:layout_alignStart="@+id/textnama"
                             android:hint="Kontak"
                             android:layout_alignRight="@+id/textView4"
-                            android:layout_alignEnd="@+id/textView4" />
+                            android:layout_alignEnd="@+id/textView4"
+                            android:inputType="number" />
 
                         <MultiAutoCompleteTextView
                             android:id="@+id/textisi"
@@ -213,7 +213,7 @@
                         <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:inputType="textPersonName"
+                            android:inputType="number"
                             android:ems="10"
                             android:id="@+id/textrekening"
                             android:hint="No Rekening"
