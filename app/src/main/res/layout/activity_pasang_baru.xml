@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText7"
+                        android:id="@+id/editnama"
                         android:hint="NAMA" />
 
                     <EditText
@@ -111,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText6"
+                        android:id="@+id/editidentitas"
                         android:layout_marginTop="5dp"
                         android:hint="NO IDENTITAS (KTP/SIM/PASPOR)" />
 
@@ -120,7 +120,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText5"
+                        android:id="@+id/editpekerjaan"
                         android:layout_marginTop="5dp"
                         android:hint="PEKERJAAN" />
 
@@ -129,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText4"
+                        android:id="@+id/editbangunan"
                         android:layout_marginTop="5dp"
                         android:hint="JENIS BANGUNAN" />
 
@@ -138,7 +138,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText3"
+                        android:id="@+id/editalamat"
                         android:layout_marginTop="5dp"
                         android:hint="ALAMAT TEMPAT TINGGAL" />
 
@@ -147,7 +147,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText2"
+                        android:id="@+id/editkontak"
                         android:layout_marginTop="5dp"
                         android:hint="HP / TELP" />
 
@@ -156,7 +156,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/editText"
+                        android:id="@+id/editalamatpasang"
                         android:layout_marginTop="5dp"
                         android:hint="ALAMAT YANG AKAN DIPASANG" />
 
