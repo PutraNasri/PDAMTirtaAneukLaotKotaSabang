@@ -219,7 +219,4 @@ public class Keluhan extends Activity {
             }
         }, 2000);
     }
-
-
-
 }

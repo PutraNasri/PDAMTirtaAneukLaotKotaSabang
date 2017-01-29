@@ -166,7 +166,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/button3"
                         android:layout_marginTop="5dp"
-                        android:onClick="send" />
+                        android:onClick="sendp" />
                 </LinearLayout>
             </ScrollView>
 

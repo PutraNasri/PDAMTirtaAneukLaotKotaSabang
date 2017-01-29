@@ -40,7 +40,7 @@ public class pasang_baru extends Activity {
         startActivity(hasilIntent);
         finish();
     }
-    public void send(View v){
+    public void sendp(View v){
         if (editTextnama.getText().toString().equals("")) {
             AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
             a_builder.setMessage("Nama tidak boleh kosong")
@@ -154,10 +154,9 @@ public class pasang_baru extends Activity {
             alert.show();
         }
 
-
-
-        addEmployee();
-    }
+    else {
+            addEmployee();}
+        }
     private void addEmployee() {
         //proses pengambilan string dari variabel
         final String nama = editTextnama.getText().toString().trim();
@@ -221,4 +220,3 @@ public class pasang_baru extends Activity {
         return super.onKeyDown(keyCode, event);
     }
 }
-//assasa
