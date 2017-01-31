@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.widget.ImageView;
@@ -15,8 +14,6 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import static android.R.attr.name;
 
 public class isi_berita extends Activity {
     private TextView editTextid;
@@ -33,8 +30,8 @@ public class isi_berita extends Activity {
         Intent intent = getIntent();
         id = intent.getStringExtra(config.EMP_ID);
 
-        editTextjudul = (TextView)findViewById(R.id.judul);
-        editTexttanggal = (TextView)findViewById(R.id.tanggal);
+        editTextjudul = (TextView)findViewById(R.id.judul_b);
+        editTexttanggal = (TextView)findViewById(R.id.tanggal_b);
         editTextisi = (TextView)findViewById(R.id.isi);
         image =(ImageView) findViewById(R.id.editimage);
         getEmployee();

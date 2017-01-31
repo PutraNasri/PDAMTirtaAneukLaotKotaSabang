@@ -1,5 +1,4 @@
 package com.example.byonge.pdamtirtaaneuklaotkotasabang;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -12,11 +11,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import java.util.HashMap;
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
-
 public class Keluhan extends Activity {
     private EditText editTextrekening;
     private EditText editTextalamat;
@@ -195,24 +192,18 @@ public class Keluhan extends Activity {
         new Handler() {
             public void postDelayed(Runnable runnable, int i) {
             }
-
             @Override
             public void publish(LogRecord record) {
-
             }
-
             @Override
             public void flush() {
-
             }
-
             @Override
             public void close() throws SecurityException {
                 finish();
                 System.exit(0);
             }
         }.postDelayed(new Runnable() {
-
             @Override
             public void run() {
                 doubleBackToExitPressedOnce=false;

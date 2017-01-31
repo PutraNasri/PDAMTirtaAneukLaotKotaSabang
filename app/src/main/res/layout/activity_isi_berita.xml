@@ -77,7 +77,7 @@
                 <TextView
                     android:text="JUDUL"
                     android:layout_width="match_parent"
-                    android:id="@+id/judul"
+                    android:id="@+id/judul_b"
                     android:textSize="18sp"
                     android:textAlignment="center"
                     android:textColor="#000000"
@@ -88,12 +88,11 @@
                     android:text="tanggal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/judul"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="11dp"
                     android:layout_marginStart="11dp"
-                    android:id="@+id/tanggal"
+                    android:id="@+id/tanggal_b"
                     android:textSize="15sp"
                     android:textColor="#000000" />
             </RelativeLayout>
