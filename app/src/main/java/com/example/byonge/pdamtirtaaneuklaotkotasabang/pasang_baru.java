@@ -9,6 +9,7 @@ import android.os.NetworkOnMainThreadException;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -41,117 +42,34 @@ public class pasang_baru extends Activity {
         finish();
     }
     public void sendp(View v){
-        if (editTextnama.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Nama tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+
+        if(TextUtils.isEmpty(editTextnama.getText().toString())) {
+            editTextnama.setError("Tidak boleh kosong");
+            return;
         }
-        if (editTextidentitas.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Identitas tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+        else if(TextUtils.isEmpty(editTextidentitas.getText().toString())) {
+            editTextidentitas.setError("Tidak boleh kosong");
+            return;
         }
-        if (editTextpekerjaan.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Pekerjaan tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+        else if(TextUtils.isEmpty(editTextpekerjaan.getText().toString())) {
+            editTextpekerjaan.setError("Tidak boleh kosong");
+            return;
         }
-        if (editTextbangunan.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Bangunan tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+        else if(TextUtils.isEmpty(editTextbangunan.getText().toString())) {
+            editTextbangunan.setError("Tidak boleh kosong");
+            return;
         }
-        if (editTextalamat.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Alamat tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+        else if(TextUtils.isEmpty(editTextalamat.getText().toString())) {
+            editTextalamat.setError("Tidak boleh kosong");
+            return;
         }
-        if (editTextkontak.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Kontak tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+        else if(TextUtils.isEmpty(editTextkontak.getText().toString())) {
+            editTextkontak.setError("Tidak boleh kosong");
+            return;
         }
-        if (editTextnama.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Nama tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
-        }
-        if (editTextalamatpasang.getText().toString().equals("")) {
-            AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
-            a_builder.setMessage("Alamat Pemasangan tidak boleh kosong")
-                    .setCancelable(false)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = a_builder.create();
-            alert.setTitle("Info");
-            alert.show();
+        else if(TextUtils.isEmpty(editTextalamatpasang.getText().toString())) {
+            editTextalamatpasang.setError("Tidak boleh kosong");
+            return;
         }
 
     else {

@@ -103,7 +103,6 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         try {
             jsonObject = new JSONObject(JSON_STRING);
             JSONArray result = jsonObject.getJSONArray(config.TAG_JSON_ARRAY);
-
             for(int i = 0; i<result.length(); i++){
                 JSONObject jo = result.getJSONObject(i);
                 String id = jo.getString(config.TAG_ID);
@@ -116,18 +115,15 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
                 employees.put(config.TAG_TANGGAL_BERITA,tanggal);
                 list.add(employees);
             }
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         ListAdapter adapter = new SimpleAdapter(
                 MainActivity.this, list, R.layout.filter,
                 new String[]{config.TAG_JUDUL_BERITA,config.TAG_TANGGAL_BERITA},
                 new int[]{R.id.judul, R.id.tanggal});
         listView.setAdapter(adapter);
     }
-
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intent = new Intent(this, isi_berita.class);
@@ -136,7 +132,6 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         intent.putExtra(config.EMP_ID,empId);
         startActivity(intent);
     }
-
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
