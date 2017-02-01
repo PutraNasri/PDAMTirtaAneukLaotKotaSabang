@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_tentang"
     android:layout_width="match_parent"
@@ -8,31 +9,37 @@
     tools:context="com.example.byonge.pdamtirtaaneuklaotkotasabang.tentang">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:background="#FF3F51B4"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="#FF3F51B4"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:text="PDAM Tirta Aneuk Laot Kota Sabang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/textView6"
-                android:textStyle="normal|bold"
-                android:textSize="18sp"
-                android:textColor="#ffffff" />
         </RelativeLayout>
+
+        <TextView
+            android:text="PDAM Tirta Aneuk Laot Kota Sabang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView6"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,6 +48,16 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_height="100dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
@@ -57,34 +74,34 @@
                 android:layout_centerHorizontal="true">
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/imageView1"
                     android:layout_marginRight="40dp"
-                    android:background="@drawable/news"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:onClick="berita" />
+                    android:onClick="berita"
+                    app:srcCompat="@drawable/news" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageView2"
                     android:layout_marginRight="40dp"
-                    android:background="@drawable/iconabout"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:onClick="pelanggan" />
+                    android:onClick="pelanggan"
+                    app:srcCompat="@drawable/iconabout" />
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageView3"
                     android:layout_marginRight="40dp"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/keluhan"
+                    app:srcCompat="@drawable/keluhan"
                     android:onClick="keluhan" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
-                    android:background="@drawable/tentang"
+                    android:id="@+id/imageView4"
                     android:layout_width="50dp"
-                    android:layout_height="50dp" />
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/tentang" />
 
             </android.support.v7.widget.GridLayout>
 
@@ -107,6 +124,48 @@
                 android:id="@+id/textView" />
 
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/relativeLayout"
+
+            android:layout_marginBottom="50dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="HALAMAN INI MASIH DALAM PENGEMBANGAN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:layout_marginTop="24dp"
+                            android:textSize="20sp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="10dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
 
     </RelativeLayout>
 </RelativeLayout>

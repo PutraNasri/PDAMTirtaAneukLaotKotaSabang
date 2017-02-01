@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 import java.util.HashMap;
 import java.util.logging.Handler;
@@ -21,6 +22,10 @@ public class Keluhan extends Activity {
     private EditText editTextnama;
     private EditText editTextkontak;
     private EditText editTextisi;
+    private ImageView berita;
+    private ImageView pelanggan;
+    private ImageView keluhan;
+    private ImageView tentang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +35,15 @@ public class Keluhan extends Activity {
         editTextnama = (EditText) findViewById(R.id.textnama);
         editTextkontak = (EditText) findViewById(R.id.textkontak);
         editTextisi = (EditText) findViewById(R.id.textisi);
+        berita =(ImageView) findViewById(R.id.imageView1);
+        pelanggan =(ImageView) findViewById(R.id.imageView2);
+        keluhan =(ImageView) findViewById(R.id.imageView3);
+        tentang =(ImageView) findViewById(R.id.imageView4);
+
+        berita.setImageResource(R.drawable.news2);
+        pelanggan.setImageResource(R.drawable.pell);
+        keluhan.setImageResource(R.drawable.cs1);
+        tentang.setImageResource(R.drawable.ii);
     }
 
     public void berita(View v){

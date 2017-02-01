@@ -58,34 +58,34 @@
                 android:layout_centerHorizontal="true">
 
                 <ImageView
-                    android:id="@+id/berita"
-                    android:layout_marginRight="40dp"
-                    android:background="@drawable/news"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:onClick="berita" />
-
-                <ImageView
-                    android:id="@+id/pelanggan"
-                    android:layout_marginRight="40dp"
-                    android:background="@drawable/iconabout"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp" />
-
-                <ImageView
-                    android:id="@+id/keluhan"
+                    android:id="@+id/imageView1"
                     android:layout_marginRight="40dp"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/keluhan"
-                    android:onClick="keluhan" />
+                    android:onClick="berita"
+                    app:srcCompat="@drawable/news" />
 
                 <ImageView
-                    android:id="@+id/tentang"
-                    android:background="@drawable/tentang"
+                    android:id="@+id/imageView2"
+                    android:layout_marginRight="40dp"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:onClick="tentang" />
+                    app:srcCompat="@drawable/iconabout" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="keluhan"
+                    app:srcCompat="@drawable/keluhan" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="tentang"
+                    app:srcCompat="@drawable/tentang" />
 
             </android.support.v7.widget.GridLayout>
 

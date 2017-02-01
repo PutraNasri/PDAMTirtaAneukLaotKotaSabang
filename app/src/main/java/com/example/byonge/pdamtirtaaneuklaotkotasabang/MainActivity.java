@@ -8,6 +8,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -23,6 +24,10 @@ import java.util.logging.LogRecord;
 
 public class MainActivity extends Activity implements ListView.OnItemClickListener {
     private ListView listView;
+    private ImageView berita;
+    private ImageView pelanggan;
+    private ImageView keluhan;
+    private ImageView tentang;
     private String JSON_STRING;
     private  SwipeRefreshLayout mySwipeRefreshLayout;
     @Override
@@ -31,6 +36,15 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.listView);
         listView.setOnItemClickListener(this);
+        berita =(ImageView) findViewById(R.id.imageView1);
+        pelanggan =(ImageView) findViewById(R.id.imageView2);
+        keluhan =(ImageView) findViewById(R.id.imageView3);
+        tentang =(ImageView) findViewById(R.id.imageView4);
+
+        berita.setImageResource(R.drawable.news1);
+        pelanggan.setImageResource(R.drawable.pell);
+        keluhan.setImageResource(R.drawable.cs2);
+        tentang.setImageResource(R.drawable.ii);
 
 
         getJSON();
