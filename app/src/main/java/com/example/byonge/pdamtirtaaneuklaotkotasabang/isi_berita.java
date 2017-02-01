@@ -20,7 +20,7 @@ public class isi_berita extends Activity {
     private TextView editTextjudul;
     private TextView editTextisi;
     private TextView editTexttanggal;
-
+//sudah ok
     private ImageView image;
     private String id;
     @Override
