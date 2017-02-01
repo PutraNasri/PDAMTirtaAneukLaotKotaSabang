@@ -13,7 +13,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -79,7 +78,8 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         finish();
     }
     public void segarkan(View v){
-       getJSON();
+
+        getJSON();
     }
 
     private void getJSON(){
