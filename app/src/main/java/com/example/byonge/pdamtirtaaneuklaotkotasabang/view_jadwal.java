@@ -23,12 +23,19 @@ public class view_jadwal extends Activity {
     private ListView listView;
     private TextView texk;
     private String JSON_STRING;
+    String nama;
+    String url ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_jadwal);
         listView = (ListView) findViewById(R.id.list_jadwal);
-        texk = (TextView) findViewById(R.id.textView8);
+        texk = (TextView) findViewById(R.id.textView14);
+        Intent intent = getIntent();
+        nama = intent.getStringExtra("NAMA");
+        url = intent.getStringExtra("URL");
+        texk.setText(nama);
         getJSON();
     }
     public void back(View v){
@@ -57,7 +64,7 @@ public class view_jadwal extends Activity {
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequest(config.URL_GET_JADWAL);
+                String s = rh.sendGetRequest(url);
                 return s;
             }
         }

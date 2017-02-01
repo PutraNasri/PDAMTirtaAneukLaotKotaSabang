@@ -128,7 +128,8 @@
                         app:cardElevation="11dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
-                        android:layout_marginLeft="5dp" >
+                        android:layout_marginLeft="5dp"
+                        android:onClick="tek_tok">
 
                         <RelativeLayout
                             android:layout_width="match_parent"

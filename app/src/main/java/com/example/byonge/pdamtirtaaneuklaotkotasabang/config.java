@@ -10,8 +10,8 @@ public class config {
     public static final String URL_GET_BERITA="http://cobabflf.esy.es/getberita.php";
     public static final String URL_GET_DETAIL_BERITA = "http://cobabflf.esy.es/get_detail_berita.php?id=";
     public static final String URL_GET_ALL_LOCATION="http://kinketkuena.esy.es/getAlllocation.php";
-    public static final String URL_GET_JADWAL="http://cobabflf.esy.es/get_pompa_cot_bau.php";
-
+    public static final String URL_GET_JADWAL_COT_BAU="http://cobabflf.esy.es/get_pompa_cot_bau.php";
+    public static final String URL_GET_JADWAL_TEK_TOK="http://cobabflf.esy.es/get_pompa_tek_tok.php";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -68,7 +68,7 @@
                     android:onClick="back" />
 
                 <TextView
-                    android:text="JADWAL PEMBAGIAN AIR COT BAU"
+                    android:text="JADWAL PEMBAGIAN AIR"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView8"
                     android:textSize="25sp"
@@ -88,10 +88,26 @@
             android:layout_marginBottom="50dp"
             android:layout_below="@+id/relativeLayout">
 
-            <ListView
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/list_jadwal" />
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/list_jadwal"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
         </RelativeLayout>
 
     </RelativeLayout>

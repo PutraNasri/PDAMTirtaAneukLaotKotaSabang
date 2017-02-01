@@ -21,6 +21,19 @@ public class jadwal extends Activity {
     }
     public void cot_bau(View v){
         Intent hasilIntent = new Intent(jadwal.this, view_jadwal.class);
+        String emp = "COT BAU";
+        String url = config.URL_GET_JADWAL_COT_BAU.toString();
+        hasilIntent.putExtra("NAMA",emp);
+        hasilIntent.putExtra("URL",url);
+        startActivity(hasilIntent);
+        finish();
+    }
+    public void tek_tok(View v){
+        Intent hasilIntent = new Intent(jadwal.this, view_jadwal.class);
+        String emp = "TEK TOK";
+        String url = config.URL_GET_JADWAL_TEK_TOK.toString();
+        hasilIntent.putExtra("NAMA",emp);
+        hasilIntent.putExtra("URL",url);
         startActivity(hasilIntent);
         finish();
     }
