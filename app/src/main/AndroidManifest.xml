@@ -18,14 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Keluhan"
-            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".Keluhan"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".tentang" />
         <activity android:name=".isi_berita" />
         <activity android:name=".pelanggan" />
-        <activity android:name=".pasang_baru"
-            android:windowSoftInputMode="stateHidden"/>
-        <activity android:name=".jadwal"></activity>
+        <activity
+            android:name=".pasang_baru"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".jadwal" />
+        <activity android:name=".view_jadwal"></activity>
     </application>
 
 </manifest>

@@ -37,6 +37,11 @@ public class pelanggan extends Activity {
         startActivity(hasilIntent);
         finish();
     }
+    public void jadwal(View v){
+        Intent hasilIntent = new Intent(pelanggan.this, jadwal.class);
+        startActivity(hasilIntent);
+        finish();
+    }
     boolean doubleBackToExitPressedOnce = false;
 
     @Override

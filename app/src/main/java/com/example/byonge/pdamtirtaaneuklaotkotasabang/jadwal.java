@@ -19,6 +19,11 @@ public class jadwal extends Activity {
         startActivity(hasilIntent);
         finish();
     }
+    public void cot_bau(View v){
+        Intent hasilIntent = new Intent(jadwal.this, view_jadwal.class);
+        startActivity(hasilIntent);
+        finish();
+    }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {

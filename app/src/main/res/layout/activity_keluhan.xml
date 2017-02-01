@@ -227,7 +227,7 @@
                             android:layout_alignEnd="@+id/textView4" />
 
                         <TextView
-                            android:text="FORM PENGADUAN LANGGANAN"
+                            android:text="FORM PENGADUAN PELANGGAN"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/textView4"

@@ -10,6 +10,8 @@ public class config {
     public static final String URL_GET_BERITA="http://cobabflf.esy.es/getberita.php";
     public static final String URL_GET_DETAIL_BERITA = "http://cobabflf.esy.es/get_detail_berita.php?id=";
     public static final String URL_GET_ALL_LOCATION="http://kinketkuena.esy.es/getAlllocation.php";
+    public static final String URL_GET_JADWAL="http://cobabflf.esy.es/get_pompa_cot_bau.php";
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -46,6 +48,10 @@ public class config {
     public static final String TAG_ISI_BERITA = "isi";
     public static final String TAG_JUDUL_BERITA = "judul";
     public static final String TAG_TANGGAL_BERITA = "tanggal";
+    public static final String TAG_NO_JADWAL = "no_pompa";
+    public static final String TAG_JAM_JADWAL = "jam";
+    public static final String TAG_LEN_JADWAL = "len";
+    public static final String TAG_KET_JADWAL = "ket";
 
 
 
