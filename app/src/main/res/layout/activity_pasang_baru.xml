@@ -8,11 +8,16 @@
     tools:context="com.example.byonge.pdamtirtaaneuklaotkotasabang.pasang_baru">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:background="#FF3F51B4"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_height="50dp">
+
+        <WebView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/segar" />
 
         <TextView
             android:text="PDAM Tirta Aneuk Laot Kota Sabang"

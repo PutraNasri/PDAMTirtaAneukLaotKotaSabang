@@ -28,7 +28,8 @@
             android:name=".pasang_baru"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".jadwal" />
-        <activity android:name=".view_jadwal"></activity>
+        <activity android:name=".view_jadwal" />
+        <activity android:name=".list_pasang_baru"></activity>
     </application>
 
 </manifest>

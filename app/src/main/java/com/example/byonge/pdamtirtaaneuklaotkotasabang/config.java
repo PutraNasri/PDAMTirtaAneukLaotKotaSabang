@@ -12,7 +12,7 @@ public class config {
     public static final String URL_GET_ALL_LOCATION="http://kinketkuena.esy.es/getAlllocation.php";
     public static final String URL_GET_JADWAL_COT_BAU="http://cobabflf.esy.es/get_pompa_cot_bau.php";
     public static final String URL_GET_JADWAL_TEK_TOK="http://cobabflf.esy.es/get_pompa_tek_tok.php";
-
+    public static final String URL_GET_CEK_ANTRI="http://cobabflf.esy.es/get_cek_pasang_baru.php";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -52,6 +52,8 @@ public class config {
     public static final String TAG_JAM_JADWAL = "jam";
     public static final String TAG_LEN_JADWAL = "len";
     public static final String TAG_KET_JADWAL = "ket";
+    public static final String TAG_NAMA_ANTRI = "nama";
+    public static final String TAG_STATUS_ANTRI = "status_pasang";
 
 
 

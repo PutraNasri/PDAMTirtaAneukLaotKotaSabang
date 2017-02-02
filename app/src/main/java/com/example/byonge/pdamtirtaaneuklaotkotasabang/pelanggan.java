@@ -38,6 +38,11 @@ public class pelanggan extends Activity {
         startActivity(hasilIntent);
         finish();
     }
+    public void antri(View v){
+        Intent hasilIntent = new Intent(pelanggan.this, list_pasang_baru.class);
+        startActivity(hasilIntent);
+        finish();
+    }
     public void tentang(View v){
         Intent hasilIntent = new Intent(pelanggan.this, tentang.class);
         startActivity(hasilIntent);
@@ -53,6 +58,8 @@ public class pelanggan extends Activity {
         startActivity(hasilIntent);
         finish();
     }
+
+    ///////////////////////////jangan lupa jika sudah fik semua hilangkan code ini////////////////////////////////
     public void jadwal(View v){
         AlertDialog.Builder a_builder = new AlertDialog.Builder(pelanggan.this);
         a_builder.setMessage("HALAMAN INI MASIH DALAM PENGEMBANGAN")
@@ -69,6 +76,7 @@ public class pelanggan extends Activity {
         AlertDialog alert = a_builder.create();
         alert.setTitle("Info");
         alert.show();
+     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         /*
         Intent hasilIntent = new Intent(pelanggan.this, jadwal.class);

@@ -12,7 +12,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.HashMap;
 
@@ -73,7 +75,9 @@ public class pasang_baru extends Activity {
         }
 
     else {
-            addEmployee();}
+            addEmployee();
+
+        }
         }
     private void addEmployee() {
         //proses pengambilan string dari variabel
@@ -95,6 +99,7 @@ public class pasang_baru extends Activity {
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
                 loading.dismiss();
+
                 Toast.makeText(pasang_baru.this, s, Toast.LENGTH_LONG).show();
                 AlertDialog.Builder a_builder = new AlertDialog.Builder(pasang_baru.this);
                 a_builder.setMessage("Terima Kasih Telah Menggunakan Layanan Kami,Pengajuan Pasang Baru anda segera di proses")

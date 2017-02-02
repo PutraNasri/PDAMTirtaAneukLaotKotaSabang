@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
@@ -45,6 +46,8 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         keluhan.setImageResource(R.drawable.cs2);
         tentang.setImageResource(R.drawable.ii);
 
+        WebView myWebView = (WebView) findViewById(R.id.web);
+        myWebView.loadUrl("http://cobabflf.esy.es/getberita.php");
 
         getJSON();
 /*
@@ -78,20 +81,16 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         finish();
     }
     public void segarkan(View v){
-
-        getJSON();
+    getJSON();
     }
-
     private void getJSON(){
         class GetJSON extends AsyncTask<Void,Void,String> {
-
             ProgressDialog loading;
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
                 loading = ProgressDialog.show(MainActivity.this,"Mengambil Data","Loading...",false,false);
             }
-
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
