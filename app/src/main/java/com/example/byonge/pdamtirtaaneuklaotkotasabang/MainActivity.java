@@ -46,8 +46,8 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         keluhan.setImageResource(R.drawable.cs2);
         tentang.setImageResource(R.drawable.ii);
 
-        WebView myWebView = (WebView) findViewById(R.id.web);
-        myWebView.loadUrl("http://cobabflf.esy.es/getberita.php");
+    //    WebView myWebView = (WebView) findViewById(R.id.web);
+     //   myWebView.loadUrl("http://cobabflf.esy.es/getberita.php");
 
         getJSON();
 /*

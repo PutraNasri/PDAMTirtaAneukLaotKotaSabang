@@ -138,6 +138,9 @@ public class pasang_baru extends Activity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            Intent hasilIntent = new Intent(pasang_baru.this, pelanggan.class);
+            startActivity(hasilIntent);
+            finish();
             return false;
         }
         return super.onKeyDown(keyCode, event);

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
@@ -28,8 +29,9 @@ public class list_pasang_baru extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_pasang_baru);
         listView = (ListView) findViewById(R.id.list_antri);
-        WebView myWebView = (WebView) findViewById(R.id.web);
-        myWebView.loadUrl("http://cobabflf.esy.es/get_cek_pasang_baru.php");
+
+       // WebView myWebView = (WebView) findViewById(R.id.web);
+       // myWebView.loadUrl("http://cobabflf.esy.es/get_cek_pasang_baru.php");
 
         getJSON();
     }
@@ -98,5 +100,15 @@ public class list_pasang_baru extends Activity {
                 new String[]{config.TAG_NAMA_ANTRI,config.TAG_STATUS_ANTRI},
                 new int[]{R.id.nama, R.id.status});
         listView.setAdapter(adapter);
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            Intent hasilIntent = new Intent(list_pasang_baru.this, pelanggan.class);
+            startActivity(hasilIntent);
+            finish();
+            return false;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }
