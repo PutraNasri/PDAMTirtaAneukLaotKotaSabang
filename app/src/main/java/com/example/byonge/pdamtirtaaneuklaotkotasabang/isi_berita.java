@@ -34,7 +34,7 @@ public class isi_berita extends Activity {
         setContentView(R.layout.activity_isi_berita);
         Intent intent = getIntent();
         id = intent.getStringExtra(config.EMP_ID);
-
+///
         editTextjudul = (TextView)findViewById(R.id.judul_b);
         editTexttanggal = (TextView)findViewById(R.id.tanggal_b);
         editTextisi = (TextView)findViewById(R.id.isi);
