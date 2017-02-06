@@ -11,6 +11,9 @@ import android.util.Base64;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,6 +26,7 @@ public class isi_berita extends Activity {
 //sudah ok
     private ImageView image;
     private String id;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,9 @@ public class isi_berita extends Activity {
         editTextisi = (TextView)findViewById(R.id.isi);
         image =(ImageView) findViewById(R.id.editimage);
         getEmployee();
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
     private void getEmployee(){
         class GetEmployee extends AsyncTask<Void,Void,String> {

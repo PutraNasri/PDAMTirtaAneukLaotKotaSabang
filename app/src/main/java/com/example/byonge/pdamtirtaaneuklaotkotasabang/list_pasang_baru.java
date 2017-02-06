@@ -40,12 +40,13 @@ public class list_pasang_baru extends Activity {
         startActivity(hasilIntent);
         finish();
     }
+   /*
     public void segarkan(View v){
         //test
 
         getJSON();
-
     }
+    */
     private void getJSON(){
         class GetJSON extends AsyncTask<Void,Void,String> {
 

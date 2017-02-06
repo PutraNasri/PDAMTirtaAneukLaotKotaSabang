@@ -26,7 +26,7 @@
                 android:layout_marginLeft="10dp">
 
                 <TextView
-                    android:text="bak usman pdi"
+                    android:text="null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/len"
@@ -38,7 +38,7 @@
                     android:layout_marginTop="10dp" />
 
                 <TextView
-                    android:text="NO1"
+                    android:text="null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
@@ -50,7 +50,7 @@
                     android:layout_marginTop="5dp" />
 
                 <TextView
-                    android:text="21.00 s/d 03.00"
+                    android:text="null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/jam"
@@ -61,7 +61,7 @@
                     android:layout_marginTop="10dp" />
 
                 <TextView
-                    android:text="HDPE 6'"
+                    android:text="null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/pipa"

@@ -9,9 +9,21 @@ public class config {
     public static final String URL_ADD_PASANG_BARU="http://cobabflf.esy.es/pasang_baru.php";
     public static final String URL_GET_BERITA="http://cobabflf.esy.es/getberita.php";
     public static final String URL_GET_DETAIL_BERITA = "http://cobabflf.esy.es/get_detail_berita.php?id=";
-    public static final String URL_GET_ALL_LOCATION="http://kinketkuena.esy.es/getAlllocation.php";
     public static final String URL_GET_JADWAL_COT_BAU="http://cobabflf.esy.es/get_pompa_cot_bau.php";
     public static final String URL_GET_JADWAL_TEK_TOK="http://cobabflf.esy.es/get_pompa_tek_tok.php";
+    public static final String URL_GET_JADWAL_PRIA_LAOT="http://cobabflf.esy.es/get_pompa_pria_laot.php";
+    public static final String URL_GET_JADWAL_COT_DAMAR_1="http://cobabflf.esy.es/get_pompa_cot_damar_1.php";
+    public static final String URL_GET_JADWAL_COT_DAMAR_2="http://cobabflf.esy.es/get_pompa_cot_damar_2.php";
+    public static final String URL_GET_JADWAL_ANEUK_LAOT="http://cobabflf.esy.es/get_pompa_aneuk_laot.php";
+    public static final String URL_GET_JADWAL_KRUENG_RAYA="http://cobabflf.esy.es/get_pompa_krueng_raya.php";
+    public static final String URL_GET_JADWAL_KRUENG_PANCU="http://cobabflf.esy.es/get_pompa_krueng_pancu.php";
+    public static final String URL_GET_JADWAL_USMAN_PDI="http://cobabflf.esy.es/get_pompa_usman_pdi.php";
+    public static final String URL_GET_JADWAL_KEBUN_MERICA="http://cobabflf.esy.es/get_pompa_kebun_merica.php";
+    public static final String URL_GET_JADWAL_GAPANG="http://cobabflf.esy.es/get_pompa_cot_gapang";
+    public static final String URL_GET_JADWAL_LAM_NIBONG="http://cobabflf.esy.es/get_pompa_lam_nibong.php";
+    public static final String URL_GET_JADWAL_TEUPIN_CIRIK="http://cobabflf.esy.es/get_pompa_teupin_cirik.php";
+    public static final String URL_GET_JADWAL_UJONG_SEKUNDUR="http://cobabflf.esy.es/get_pompa_ujong_sekundur.php";
+    public static final String URL_GET_JADWAL_SABANG_HILL="http://cobabflf.esy.es/get_pompa_sabang_hill.php";
     public static final String URL_GET_CEK_ANTRI="http://cobabflf.esy.es/get_cek_pasang_baru.php";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
@@ -19,6 +22,7 @@ public class pelanggan extends Activity {
     private ImageView pelanggan;
     private ImageView keluhan;
     private ImageView tentang;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,7 @@ public class pelanggan extends Activity {
         pelanggan.setImageResource(R.drawable.pel);
         keluhan.setImageResource(R.drawable.cs2);
         tentang.setImageResource(R.drawable.ii);
+
     }
     public void keluhan(View v){
         Intent hasilIntent = new Intent(pelanggan.this, Keluhan.class);
@@ -59,8 +64,10 @@ public class pelanggan extends Activity {
         finish();
     }
 
-    ///////////////////////////jangan lupa jika sudah fik semua hilangkan code ini////////////////////////////////
+
     public void jadwal(View v){
+        ///////////////////////////jangan lupa jika sudah fik semua hilangkan code ini////////////////////////////////
+        /*
         AlertDialog.Builder a_builder = new AlertDialog.Builder(pelanggan.this);
         a_builder.setMessage("HALAMAN INI MASIH DALAM PENGEMBANGAN")
                 .setCancelable(false)
@@ -78,11 +85,11 @@ public class pelanggan extends Activity {
         alert.show();
      /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        /*
+        */
         Intent hasilIntent = new Intent(pelanggan.this, jadwal.class);
         startActivity(hasilIntent);
         finish();
-        */
+
     }
     boolean doubleBackToExitPressedOnce = false;
 

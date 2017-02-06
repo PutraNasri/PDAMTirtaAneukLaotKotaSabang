@@ -41,7 +41,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_height="100dp">
+            android:layout_height="50dp">
 
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
@@ -49,31 +49,35 @@
                 android:theme="?attr/actionBarTheme"
                 android:minHeight="?attr/actionBarSize"
                 android:id="@+id/toolbar"
-                android:layout_height="100dp" />
+                android:layout_height="match_parent" />
 
             <android.support.v7.widget.GridLayout
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:layout_height="50dp">
 
                 <ImageView
                     android:id="@+id/berita"
-                    android:layout_marginRight="30dp"
-                    android:background="@drawable/back"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:onClick="back" />
+                    android:layout_marginRight="15dp"
+                    android:background="?attr/actionModeCloseDrawable"
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="back"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#ffffff"
+                    app:layout_gravity="center" />
 
                 <TextView
-                    android:text="JADWAL PEMBAGIAN AIR"
+                    android:text="JADWAL  POMPA"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:id="@+id/textView8"
-                    android:textSize="25sp"
-                    android:textColor="#000000" />
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp" />
 
             </android.support.v7.widget.GridLayout>
 
@@ -111,7 +115,7 @@
                             android:layout_height="match_parent">
 
                             <TextView
-                                android:text="MESIN POMPA COT BAU"
+                                android:text="COT BAU"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/textView10"
@@ -122,6 +126,7 @@
                                 android:textStyle="normal|bold" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
                     <android.support.v7.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
@@ -136,7 +141,7 @@
                             android:layout_height="match_parent">
 
                             <TextView
-                                android:text="MESIN POMPA TEK TOK"
+                                android:text="TEK TOK"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:id="@+id/textView11"
@@ -147,9 +152,374 @@
                                 android:textStyle="normal|bold" />
                         </RelativeLayout>
                     </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="pria_laot">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="PRIA LAOT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView16"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="cot_damar_1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="COT DAMAR 1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView17"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="cot_damar_2">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="COT DAMAR 2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView18"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="aneuk_laot">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="ANEUK LAOT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView19"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="krueng_raya">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="KRUENG RAYA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView20"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="krueng_pancu">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="KRUENG PANCU"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView21"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="usman_pdi">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="USMAN PDI"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView22"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="kebun_merica">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="KEBUN MERICA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView23"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="lam_nibong">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="LAM NIBONG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView25"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="teupin_cirik">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="TEUPIN CIRIK"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView26"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="ujong_sekundur">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="UJONG SEKUNDUR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView27"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="gapang">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="GAPANG"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView24"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        app:cardElevation="11dp"
+                        android:onClick="sabang_hill">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:text="SABANG HILL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView28"
+                                android:textColor="#000000"
+                                android:textStyle="normal|bold"
+                                android:textSize="20sp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="false"
+                                android:layout_marginEnd="46dp"
+                                android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
                 </LinearLayout>
             </ScrollView>
         </RelativeLayout>
+
+
 
     </RelativeLayout>
 </RelativeLayout>

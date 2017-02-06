@@ -70,7 +70,7 @@
                     app:layout_gravity="center" />
 
                 <TextView
-                    android:text="JADWAL PEMBAGIAN AIR"
+                    android:text="JADWAL POMPA"
                     android:layout_height="match_parent"
                     android:id="@+id/textView8"
                     android:textSize="20sp"

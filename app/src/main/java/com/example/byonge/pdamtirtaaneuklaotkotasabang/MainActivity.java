@@ -14,6 +14,10 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,6 +34,7 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     private ImageView tentang;
     private String JSON_STRING;
     private  SwipeRefreshLayout mySwipeRefreshLayout;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +69,9 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
                 }
         );
   */
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
     public void keluhan(View v){
         Intent hasilIntent = new Intent(MainActivity.this, Keluhan.class);
@@ -80,9 +88,11 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         startActivity(hasilIntent);
         finish();
     }
+    /*
     public void segarkan(View v){
     getJSON();
     }
+    */
     private void getJSON(){
         class GetJSON extends AsyncTask<Void,Void,String> {
             ProgressDialog loading;
