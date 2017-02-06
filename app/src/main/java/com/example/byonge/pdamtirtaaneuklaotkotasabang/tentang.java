@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
@@ -16,6 +20,7 @@ public class tentang extends Activity {
     private ImageView pelanggan;
     private ImageView keluhan;
     private ImageView tentang;
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +34,13 @@ public class tentang extends Activity {
         pelanggan.setImageResource(R.drawable.pell);
         keluhan.setImageResource(R.drawable.cs2);
         tentang.setImageResource(R.drawable.i);
+
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-1507631584345851~4109903120");
+
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
     public void keluhan(View v){
         Intent hasilIntent = new Intent(tentang.this, Keluhan.class);

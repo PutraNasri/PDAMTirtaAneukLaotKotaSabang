@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,6 +40,7 @@ public class isi_berita extends Activity {
         editTextisi = (TextView)findViewById(R.id.isi);
         image =(ImageView) findViewById(R.id.editimage);
         getEmployee();
+        MobileAds.initialize(getApplicationContext(),"ca-app-pub-1507631584345851~4109903120");
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);

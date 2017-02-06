@@ -33,7 +33,7 @@
                         android:textSize="18sp"
                         android:layout_marginLeft="8dp"
                         android:layout_alignBottom="@+id/nama"
-                        android:layout_alignStart="@+id/textView15"
+
                         android:textColor="#000000" />
 
                     <TextView
