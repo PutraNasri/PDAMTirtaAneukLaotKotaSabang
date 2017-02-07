@@ -216,6 +216,33 @@
                                 android:layout_alignEnd="@+id/textView4"
                                 android:layout_height="150dp" />
 
+                            <TextView
+                                android:text="input foto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView34"
+                                android:layout_marginTop="20dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/ivImage"
+                                    android:onClick="setimage"
+                                    app:srcCompat="@drawable/camera"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentStart="true" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:text="foto boleh kosong"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView35" />
+
                             <Button
                                 android:text="KIRIM"
                                 android:layout_width="match_parent"
@@ -226,7 +253,8 @@
                                 android:layout_alignStart="@+id/textisi"
                                 android:layout_alignRight="@+id/textisi"
                                 android:layout_alignEnd="@+id/textisi"
-                                android:onClick="send" />
+                                android:onClick="send"
+                                android:layout_marginTop="10dp" />
 
                         </LinearLayout>
 

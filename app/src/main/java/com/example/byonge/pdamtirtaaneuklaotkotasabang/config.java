@@ -6,6 +6,7 @@ package com.example.byonge.pdamtirtaaneuklaotkotasabang;
 public class config {
     //String Alamat untuk CRUD
     public static final String URL_ADD_KELUHAN="http://cobabflf.esy.es/addkeluhan.php";
+    public static final String URL_ADD_KELUHAN_TEST="http://cobabflf.esy.es/addkeluhan_test_foto.php";
     public static final String URL_ADD_PASANG_BARU="http://cobabflf.esy.es/pasang_baru.php";
     public static final String URL_GET_BERITA="http://cobabflf.esy.es/getberita.php";
     public static final String URL_GET_DETAIL_BERITA = "http://cobabflf.esy.es/get_detail_berita.php?id=";
@@ -38,6 +39,7 @@ public class config {
     public static final String KEY_EMP_NAMA = "nama";
     public static final String KEY_EMP_KONTAK = "kontak";
     public static final String KEY_EMP_ISI = "isi";
+    public static final String KEY_EMP_FOTO = "foto";
 
 
     public static final String KEY_EMP_NAMA_BARU = "nama";
