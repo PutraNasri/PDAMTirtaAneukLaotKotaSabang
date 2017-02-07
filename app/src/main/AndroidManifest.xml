@@ -29,7 +29,8 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".jadwal" />
         <activity android:name=".view_jadwal" />
-        <activity android:name=".list_pasang_baru"></activity>
+        <activity android:name=".list_pasang_baru" />
+        <activity android:name=".view_image"></activity>
     </application>
 
 </manifest>
