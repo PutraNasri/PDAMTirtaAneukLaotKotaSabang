@@ -14,11 +14,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,30 +44,12 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         pelanggan =(ImageView) findViewById(R.id.imageView2);
         keluhan =(ImageView) findViewById(R.id.imageView3);
         tentang =(ImageView) findViewById(R.id.imageView4);
-
         berita.setImageResource(R.drawable.news1);
         pelanggan.setImageResource(R.drawable.pell);
         keluhan.setImageResource(R.drawable.cs2);
         tentang.setImageResource(R.drawable.ii);
-
-    //    WebView myWebView = (WebView) findViewById(R.id.web);
-     //   myWebView.loadUrl("http://cobabflf.esy.es/getberita.php");
-
         getJSON();
-/*
-        mySwipeRefreshLayout.setOnRefreshListener(
-                new SwipeRefreshLayout.OnRefreshListener() {
-                    @Override
-                    public void onRefresh() {
 
-
-                        // This method performs the actual data-refresh operation.
-                        // The method calls setRefreshing(false) when it's finished.
-                        getJSON();
-                    }
-                }
-        );
-  */
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-1507631584345851~4109903120");
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

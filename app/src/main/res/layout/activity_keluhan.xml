@@ -132,96 +132,103 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/textalamat"
-                            android:layout_below="@+id/textrekening"
-                            android:layout_alignLeft="@+id/textrekening"
-                            android:layout_alignStart="@+id/textrekening"
-                            android:hint="Alamat Rekening"
-                            android:layout_alignRight="@+id/textView4"
-                            android:layout_alignEnd="@+id/textView4" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPersonName"
-                            android:ems="10"
-                            android:id="@+id/textnama"
-                            android:layout_below="@+id/textalamat"
-                            android:layout_alignLeft="@+id/textalamat"
-                            android:layout_alignStart="@+id/textalamat"
-                            android:hint="Nama Pelapor"
-                            android:layout_alignRight="@+id/textView4"
-                            android:layout_alignEnd="@+id/textView4" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="10"
-                            android:id="@+id/textkontak"
-                            android:layout_below="@+id/textnama"
-                            android:layout_alignLeft="@+id/textnama"
-                            android:layout_alignStart="@+id/textnama"
-                            android:hint="Kontak"
-                            android:layout_alignRight="@+id/textView4"
-                            android:layout_alignEnd="@+id/textView4"
-                            android:inputType="number" />
-
-                        <MultiAutoCompleteTextView
-                            android:id="@+id/textisi"
-                            android:layout_below="@+id/textkontak"
-                            android:layout_alignLeft="@+id/textkontak"
-                            android:layout_alignStart="@+id/textkontak"
-                            android:hint="Tuliskan Keluhan Anda "
+                        <LinearLayout
+                            android:orientation="vertical"
                             android:layout_width="match_parent"
-                            android:layout_alignRight="@+id/textView4"
-                            android:layout_alignEnd="@+id/textView4"
-                            android:layout_height="150dp" />
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
 
-                        <Button
-                            android:text="KIRIM"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/button"
-                            android:layout_below="@+id/textisi"
-                            android:layout_alignLeft="@+id/textisi"
-                            android:layout_alignStart="@+id/textisi"
-                            android:layout_alignRight="@+id/textisi"
-                            android:layout_alignEnd="@+id/textisi"
-                            android:onClick="send" />
+                            <TextView
+                                android:text="FORM PENGADUAN PELANGGAN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView4"
+                                android:layout_marginTop="24dp"
+                                android:textSize="20sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="10dp" />
 
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:inputType="number"
-                            android:ems="10"
-                            android:id="@+id/textrekening"
-                            android:hint="No Rekening"
-                            android:layout_marginLeft="6dp"
-                            android:layout_marginStart="6dp"
-                            android:layout_marginTop="24dp"
-                            android:layout_below="@+id/textView4"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_alignRight="@+id/textView4"
-                            android:layout_alignEnd="@+id/textView4" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:id="@+id/textrekening"
+                                android:hint="No Rekening"
+                                android:layout_marginTop="24dp"
+                                android:layout_below="@+id/textView4"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignRight="@+id/textView4"
+                                android:layout_alignEnd="@+id/textView4" />
 
-                        <TextView
-                            android:text="FORM PENGADUAN PELANGGAN"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView4"
-                            android:layout_marginTop="24dp"
-                            android:textSize="20sp"
-                            android:layout_alignParentTop="true"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginLeft="10dp" />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:id="@+id/textalamat"
+                                android:layout_below="@+id/textrekening"
+                                android:layout_alignLeft="@+id/textrekening"
+                                android:layout_alignStart="@+id/textrekening"
+                                android:hint="Alamat Rekening"
+                                android:layout_alignRight="@+id/textView4"
+                                android:layout_alignEnd="@+id/textView4" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:ems="10"
+                                android:id="@+id/textnama"
+                                android:layout_below="@+id/textalamat"
+                                android:layout_alignLeft="@+id/textalamat"
+                                android:layout_alignStart="@+id/textalamat"
+                                android:hint="Nama Pelapor"
+                                android:layout_alignRight="@+id/textView4"
+                                android:layout_alignEnd="@+id/textView4" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:id="@+id/textkontak"
+                                android:layout_below="@+id/textnama"
+                                android:layout_alignLeft="@+id/textnama"
+                                android:layout_alignStart="@+id/textnama"
+                                android:hint="Kontak"
+                                android:layout_alignRight="@+id/textView4"
+                                android:layout_alignEnd="@+id/textView4"
+                                android:inputType="number" />
+
+                            <MultiAutoCompleteTextView
+                                android:id="@+id/textisi"
+                                android:layout_below="@+id/textkontak"
+                                android:layout_alignLeft="@+id/textkontak"
+                                android:layout_alignStart="@+id/textkontak"
+                                android:hint="Tuliskan Keluhan Anda "
+                                android:layout_width="match_parent"
+                                android:layout_alignRight="@+id/textView4"
+                                android:layout_alignEnd="@+id/textView4"
+                                android:layout_height="150dp" />
+
+                            <Button
+                                android:text="KIRIM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/button"
+                                android:layout_below="@+id/textisi"
+                                android:layout_alignLeft="@+id/textisi"
+                                android:layout_alignStart="@+id/textisi"
+                                android:layout_alignRight="@+id/textisi"
+                                android:layout_alignEnd="@+id/textisi"
+                                android:onClick="send" />
+
+                        </LinearLayout>
 
                     </RelativeLayout>
                 </LinearLayout>
