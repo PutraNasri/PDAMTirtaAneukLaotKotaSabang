@@ -22,11 +22,12 @@ public class pelanggan extends Activity {
     private ImageView pelanggan;
     private ImageView keluhan;
     private ImageView tentang;
-    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pelanggan);
+
         berita =(ImageView) findViewById(R.id.imageView1);
         pelanggan =(ImageView) findViewById(R.id.imageView2);
         keluhan =(ImageView) findViewById(R.id.imageView3);
@@ -63,36 +64,13 @@ public class pelanggan extends Activity {
         startActivity(hasilIntent);
         finish();
     }
-
-
     public void jadwal(View v){
-        ///////////////////////////jangan lupa jika sudah fik semua hilangkan code ini////////////////////////////////
-        /*
-        AlertDialog.Builder a_builder = new AlertDialog.Builder(pelanggan.this);
-        a_builder.setMessage("HALAMAN INI MASIH DALAM PENGEMBANGAN")
-                .setCancelable(false)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                        Intent hasilIntent = new Intent(pelanggan.this, pelanggan.class);
-                        startActivity(hasilIntent);
-                        finish();
-                    }
-                });
-        AlertDialog alert = a_builder.create();
-        alert.setTitle("Info");
-        alert.show();
-     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        */
         Intent hasilIntent = new Intent(pelanggan.this, jadwal.class);
         startActivity(hasilIntent);
         finish();
-
     }
-    boolean doubleBackToExitPressedOnce = false;
 
+    boolean doubleBackToExitPressedOnce = false;
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -119,7 +97,6 @@ public class pelanggan extends Activity {
 
             @Override
             public void close() throws SecurityException {
-                finish();
                 System.exit(0);
             }
         }.postDelayed(new Runnable() {
@@ -130,5 +107,5 @@ public class pelanggan extends Activity {
             }
         }, 2000);
     }
-    //TEST
+
 }
