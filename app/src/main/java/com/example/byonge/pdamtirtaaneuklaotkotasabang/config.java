@@ -4,7 +4,7 @@ package com.example.byonge.pdamtirtaaneuklaotkotasabang;
  * Created by addd on 2/28/2016.
  */
 public class config {
-    //String Alamat untuk CRUD
+    //String Alamat untuk CRUD//
     public static final String URL_ADD_KELUHAN="http://cobabflf.esy.es/addkeluhan.php";
     public static final String URL_ADD_KELUHAN_TEST="http://cobabflf.esy.es/addkeluhan_test_foto.php";
     public static final String URL_ADD_PASANG_BARU="http://cobabflf.esy.es/pasang_baru.php";
