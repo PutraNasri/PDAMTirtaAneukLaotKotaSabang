@@ -3,9 +3,14 @@ package com.example.byonge.pdamtirtaaneuklaotkotasabang;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.AdapterView;
@@ -94,7 +99,7 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequest(config.URL_GET_BERITA);
+                String s = rh.sendGetRequest(config.URL_GET_BERITA_TEST);
                 return s;
             }
         }
@@ -113,20 +118,29 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
                 String id = jo.getString(config.TAG_ID);
                 String judul = jo.getString(config.TAG_JUDUL_BERITA);
                 String tanggal = jo.getString(config.TAG_TANGGAL_BERITA);
+                String foto = jo.getString(config.TAG_FOTO_BERITA);
+
+                byte[] bytarray = Base64.decode(foto, Base64.DEFAULT);
+                Bitmap bmimage = BitmapFactory.decodeByteArray(bytarray, 0, bytarray.length);
+
+                Drawable dw = new BitmapDrawable(getResources(), bmimage);
 
                 HashMap<String,String> employees = new HashMap<>();
                 employees.put(config.TAG_ID,id);
                 employees.put(config.TAG_JUDUL_BERITA,judul);
                 employees.put(config.TAG_TANGGAL_BERITA,tanggal);
+                employees.put(config.TAG_FOTO_BERITA,String.valueOf(dw));
+
                 list.add(employees);
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
         ListAdapter adapter = new SimpleAdapter(
+
                 MainActivity.this, list, R.layout.filter,
-                new String[]{config.TAG_JUDUL_BERITA,config.TAG_TANGGAL_BERITA},
-                new int[]{R.id.judul, R.id.tanggal});
+                new String[]{config.TAG_JUDUL_BERITA,config.TAG_TANGGAL_BERITA, config.TAG_JUDUL_BERITA},
+                new int[]{R.id.judul, R.id.tanggal, R.id.image});
         listView.setAdapter(adapter);
     }
     @Override

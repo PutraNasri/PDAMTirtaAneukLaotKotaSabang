@@ -26,6 +26,7 @@ public class config {
     public static final String URL_GET_JADWAL_UJONG_SEKUNDUR="http://cobabflf.esy.es/get_pompa_ujong_sekundur.php";
     public static final String URL_GET_JADWAL_SABANG_HILL="http://cobabflf.esy.es/get_pompa_sabang_hill.php";
     public static final String URL_GET_CEK_ANTRI="http://cobabflf.esy.es/get_cek_pasang_baru.php";
+    public static final String URL_GET_BERITA_TEST="http://cobabflf.esy.es/getberita_test.php";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
