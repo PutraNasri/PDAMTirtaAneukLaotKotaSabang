@@ -60,6 +60,7 @@ public class config {
     public static final String TAG_NAMA = "nama";
     public static final String TAG_KONTAK = "kontak";
     public static final String TAG_FOTO_BERITA = "foto";
+    public static final String TAG_URL_FOTO_BERITA = "url_foto";
     public static final String TAG_ISI_BERITA = "isi";
     public static final String TAG_JUDUL_BERITA = "judul";
     public static final String TAG_TANGGAL_BERITA = "tanggal";
