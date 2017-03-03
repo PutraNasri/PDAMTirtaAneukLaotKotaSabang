@@ -1,6 +1,7 @@
 package com.example.byonge.pdamtirtaaneuklaotkotasabang;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -36,10 +37,12 @@ public class MainActivity extends Activity {
     private ImageView keluhan;
     private ImageView tentang;
     private AdView mAdView;
+    ProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        pd = new ProgressDialog(this);
 
         arrayList=new ArrayList<>();
         lv=(ListView)findViewById(R.id.listView);
@@ -47,6 +50,7 @@ public class MainActivity extends Activity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                pd.show();
                 new ReadJSON().execute(config.URL_GET_BERITA_TEST);
             }
         });
@@ -92,6 +96,7 @@ public class MainActivity extends Activity {
         @Override
         protected String doInBackground(String... params) {
             return readURL(params[0]);
+
         }
 
         @Override
@@ -105,7 +110,8 @@ public class MainActivity extends Activity {
                     arrayList.add(new Berita(
                             beritaObject.getString("url_foto"),
                             beritaObject.getString("judul"),
-                            beritaObject.getString("tanggal")));
+                            beritaObject.getString("tanggal"),
+                            beritaObject.getString("isi")));
                 }
 
             } catch (JSONException e) {
@@ -115,6 +121,7 @@ public class MainActivity extends Activity {
             AdapterBerita adapter = new AdapterBerita(
                     getApplicationContext(), R.layout.filter,arrayList);
             lv.setAdapter(adapter);
+            pd.dismiss();
         }
     }
 
