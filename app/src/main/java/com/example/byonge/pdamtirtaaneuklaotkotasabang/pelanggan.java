@@ -65,9 +65,15 @@ public class pelanggan extends Activity {
         finish();
     }
     public void jadwal(View v){
+        Toast.makeText(pelanggan.this, "dalam penyusunan", Toast.LENGTH_SHORT).show();
+
+
+        /*
         Intent hasilIntent = new Intent(pelanggan.this, jadwal.class);
         startActivity(hasilIntent);
         finish();
+        */
+
     }
 
     boolean doubleBackToExitPressedOnce = false;
